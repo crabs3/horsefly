@@ -1,0 +1,19 @@
+[versions]
+mod-version = "1.0.0"
+
+jdk = "25"
+minecraft = "26.2"
+fabric-loader = "0.19.3"
+
+loom = "1.17-SNAPSHOT"
+
+meteor = "26.2-SNAPSHOT"
+
+[libraries]
+minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
+fabric-loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric-loader" }
+
+meteor-client = { module = "meteordevelopment:meteor-client", version.ref = "meteor" }
+
+[plugins]
+fabric-loom = { id = "net.fabricmc.fabric-loom", version.ref = "loom" }

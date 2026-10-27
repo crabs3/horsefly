@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "horsefly",
+  "version": "${version}",
+  "name": "horsefly",
+  "description": "Fly horses with Meteor.",
+  "authors": [
+    "dmt"
+  ],
+  "contact": {
+    "sources": "https://github.com/crabs3/horsefly"
+  },
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "me.dmt.horsefly.HorseFlyAddon"
+    ]
+  },
+  "mixins": [
+    "horsefly.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "160,110,60",
+    "modmenu": {
+      "parent": {
+        "id": "meteor-client"
+      }
+    }
+  },
+  "suggests": {
+    "viafabricplus": "*"
+  },
+  "depends": {
+    "java": ">=${jdk_version}",
+    "minecraft": "${minecraft_version}",
+    "meteor-client": "*"
+  }
+}
